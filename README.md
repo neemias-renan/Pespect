@@ -27,6 +27,10 @@ Detalhes:
 - As rotas usam hash (`/#/showcase`, `/#/p/<id>`), então links diretos e recarregar a página funcionam em hospedagem estática.
 - Tudo roda no navegador: projetos, mídias e capturas ficam no IndexedDB de quem usa o site.
 
+## Publicação na Vercel
+
+Importe o repositório na Vercel. O preset **Vite** já detecta tudo: build `npm run build`, saída `dist`. Durante o build a Vercel define `VERCEL=1`, e o caminho base passa a ser `/` (raiz do domínio). Não é preciso `vercel.json`, porque as rotas usam hash.
+
 ## Funcionalidades
 
 - **Estúdio 3D**: mockups procedurais (Frame, MacBook com tampa ajustável, iPhone, Pro Display XDR com altura ajustável), acabamento prata ou preto, brilho da tela, reflexos e sombra projetada.
