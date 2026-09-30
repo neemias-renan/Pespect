@@ -10,20 +10,20 @@ Projeto só de frontend: Vue 3 (JavaScript), PrimeVue 3, PrimeFlex 3 e three.js.
 npm install
 npm run dev      # http://localhost:5173
 npm run build    # gera a versão de produção em dist/
-npm run preview  # serve o build em http://localhost:4173/Pespect/
+npm run preview  # serve o build em http://localhost:4173/pespect/
 ```
 
 Requer Node 20.19 ou mais recente.
 
 ## Publicação no GitHub Pages
 
-O site é publicado em **https://neemias-renan.github.io/Pespect/** pelo workflow [.github/workflows/deploy.yml](.github/workflows/deploy.yml), que roda a cada push na `main` (ou manualmente, em *Actions → Deploy to GitHub Pages → Run workflow*).
+O site é publicado em **https://neemias-renan.github.io/pespect/** pelo workflow [.github/workflows/deploy.yml](.github/workflows/deploy.yml), que roda a cada push na `main` (ou manualmente, em *Actions → Deploy to GitHub Pages → Run workflow*).
 
 Configuração única no repositório: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
 Detalhes:
 
-- O caminho base do build é `/Pespect/`. O workflow usa o nome do repositório automaticamente; para outro caminho (por exemplo, um domínio próprio), defina `BASE_PATH=/` no build.
+- O caminho base do build é `/pespect/`. O workflow usa o nome do repositório automaticamente; para outro caminho (por exemplo, um domínio próprio), defina `BASE_PATH=/` no build.
 - As rotas usam hash (`/#/showcase`, `/#/p/<id>`), então links diretos e recarregar a página funcionam em hospedagem estática.
 - Tudo roda no navegador: projetos, mídias e capturas ficam no IndexedDB de quem usa o site.
 

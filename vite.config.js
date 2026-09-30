@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 
 // GitHub Pages serves the site from /<repo>/. BASE_PATH overrides it (e.g. "/" for a custom domain).
-const base = process.env.BASE_PATH || '/Pespect/'
+const base = process.env.BASE_PATH || '/pespect/'
 
 export default defineConfig(({ command, isPreview }) => ({
   // The dev server stays at "/"; the build and `vite preview` use the GitHub Pages path.
